@@ -27,7 +27,7 @@ input.addEventListener('keypress', async (e) => {
     messages.innerHTML += `<p><b>Você:</b> ${text}</p>`;
     input.value = '';
 
-    const res = await fetch('https://chatbot-ia-production-b92e.up.railway.app', {
+    const res = await fetch('https://chatbot-ia-production-2d72.up.railway.app', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ message: text })
